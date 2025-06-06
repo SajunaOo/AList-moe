@@ -1,0 +1,215 @@
+/*
+ * AList.css v1.12 - 202506062211
+ * (C) 2025 朱茱
+ * https://www.isajuna.com
+
+ * Modified beautification component for:
+ * AList v3.45 - (C) Andy Hsu - AGPL-3.0 Licensed
+*/
+
+/* 
+ * This CSS file is designed to enhance the AList interface with a modern, semi-transparent aesthetic.
+ * It includes global variables for light and dark modes, basic styles, and specific component adjustments.
+ * The design focuses on readability and usability while maintaining a clean, minimalistic look.
+*/
+
+/* ================== 全局变量定义 ================== */
+:root {
+  --mio-main: 255, 255, 255; /* 白天模式主色调 (白色) */
+  --mio-text: 0, 0, 0;        /* 白天模式文字颜色 (黑色) */
+  --mio-main-opacity: 0.3;     /* 白天模式默认透明度 */
+  --mio-checkbox: 0, 0, 0;        /* 白天模式复选框颜色 (黑色) */
+  --mio-bg-image: url("https://s21.ax1x.com/2025/06/03/pVPADL8.webp"); /* 白天模式背景图 */
+}
+
+/* 夜间模式变量覆盖 */
+.hope-ui-dark {
+  --mio-main: 0, 0, 0;        /* 夜间模式主色调 (黑色) */
+  --mio-text: 255, 255, 255;  /* 夜间模式文字颜色 (白色) */
+  --mio-main-opacity: 0.3;     /* 夜间模式默认透明度 */
+  --mio-checkbox: 255, 255, 255;  /* 夜间模式复选框颜色 (白色) */
+  --mio-bg-image: url("https://s21.ax1x.com/2025/06/03/pVPkvVg.webp"); /* 夜间模式背景图 */
+}
+
+/* ================== 基础样式设置 ================== */
+/* 全局字体设置 */
+* {
+  font-family: 'Noto Serif SC'; /* 使用Noto Serif SC字体 */
+  font-weight: 500;                       /* 中等字重 */
+  font-style: normal;                     /* 正常样式(非斜体) */
+}
+
+/* 页面背景设置 */
+body {
+  background-repeat: no-repeat;    /* 背景不重复 */
+  background-size: cover;          /* 背景覆盖整个页面 */
+  background-attachment: fixed;    /* 背景固定不滚动 */
+  background-position-x: center;   /* 背景水平居中 */
+  background-image: var(--mio-bg-image); /* 使用变量中的背景图 */
+}
+
+/* ================== 组件样式调整 ================== */
+/* 首页Logo尺寸调整 */
+.header-left .hope-image {
+  width: auto;   /* 宽度自适应 */
+  height: 35px;  /* 固定高度35px */
+}
+
+/* 隐藏通知栏关闭按钮 */
+.hope-notification__list .hope-close-button {
+  display: none; /* 移除通知栏右上角的X按钮 */
+}
+
+/* 主内容区半透明效果 */
+.obj-box.hope-stack {
+  background-color: rgba(var(--mio-main), 0.5); /* 50%透明度的主色调 */
+}
+
+/* README区域半透明效果 */
+.hope-c-PJLV-iiuDLME-css,
+.hope-c-PJLV-ikSuVsl-css {
+  background-color: rgba(var(--mio-main), 0.5) !important; /* 50%透明度的主色调 */
+}
+
+/* 文件列表/图片/网格视图复选框颜色修改 */
+.list .hope-checkbox__control,
+.hope-grid .hope-checkbox__control {
+  color: rgb(var(--mio-checkbox));
+  background-color: rgba(var(--mio-main), 0.5);
+}
+
+/* 文件列表/图片/网格视图复选框选中状态颜色修改 */
+.list .hope-checkbox__control[data-checked],
+.hope-grid .hope-checkbox__control[data-checked] {
+  background-color: currentcolor;
+}
+
+/* 文件列表/图片/网格视图复选框聚焦状态阴影 */
+.list .hope-checkbox__control[data-focus],
+.hope-grid .hope-checkbox__control[data-focus] {
+  box-shadow: 0 0 0 3px var(--mio-checkbox);
+  border-color: var(--mio-checkbox);
+}
+
+/* 文件缩略图尺寸自适应 */
+.fileinfo .hope-image {
+    height: auto;
+    width: auto;
+}
+
+/* 右上角视图切换按钮半透明 */
+/*
+.header-right .hope-icon-button {
+  background-color: rgba(var(--mio-main), 0.5);  50%透明度的主色调 
+}
+*/
+
+/* 右下角侧边栏按钮半透明 */
+.left-toolbar-box .left-toolbar {
+  background-color: rgba(var(--mio-main), 0.5); /* 50%透明度的主色调 */
+}
+
+/* 代码块半透明效果 */
+pre {
+  background-color: rgba(var(--mio-main), var(--mio-main-opacity)) !important; /* 使用全局透明度变量 */
+}
+
+/* 返回顶部按钮半透明 */
+.hope-c-PJLV-igqSGEg-css {
+  background: rgba(var(--mio-main), 0.5) !important; /* 50%透明度的主色调 */
+}
+
+/* 顶部区域完全透明 */
+#root > .header {
+  background: rgba(var(--mio-main), 0); /* 完全透明 */
+}
+
+/* 导航条样式 */
+.body > .nav {
+  background-color: rgba(var(--mio-main), 0.5); /* 50%透明度的主色调 */
+  border-radius: var(--hope-radii-xl);          /* 使用主题定义的圆角大小 */
+}
+
+/* ================== 搜索区域样式 ================== */
+/* 搜索主体毛玻璃效果 */
+.hope-c-PJLV-iiBaxsN-css {
+  background-color: rgba(var(--mio-main), 0.2) !important; /* 20%透明度的主色调 */
+  backdrop-filter: blur(10px) !important;                 /* 10px模糊效果 */
+}
+
+/* 搜索输入框毛玻璃效果 会对后台和登录页生效 */
+.hope-c-kvTTWD-hYRNAb-variant-filled {
+  background-color: rgba(var(--mio-main), 0.2) !important; /* 20%透明度的主色调 */
+  backdrop-filter: blur(10px) !important;                 /* 10px模糊效果 */
+}
+
+/* 搜索按钮毛玻璃效果 */ 
+.hope-c-PJLV-ifnAIcD-css {
+  background-color: rgba(var(--mio-main), 0.2) !important; /* 20%透明度的主色调 */
+  backdrop-filter: blur(10px) !important;                 /* 10px模糊效果 */
+  padding: var(--hope-space-1) !important;                /* 使用主题定义的小间距 */
+}
+
+/* ================== 下拉菜单样式 ================== */
+/* 菜单下拉区域半透明 */
+div.hope-menu__content {
+  background-color: rgba(var(--mio-main), var(--mio-main-opacity)); /* 使用全局透明度变量 */
+}
+
+/* 选择下拉区域半透明 */
+div.hope-c-XJURY {
+  background: rgba(var(--mio-main), 0.8); /* 80%透明度的主色调 */
+}
+
+/* ================== 登录页面样式 ================== */
+/* 登录页Logo尺寸调整 */
+.hope-c-PJLV-ibwASZs-css {
+  width: auto !important;   /* 宽度自适应 */
+  height: 48px !important;  /* 固定高度48px */
+}
+
+/* 隐藏登录标题 */
+.hope-c-PJLV-ibojvKk-css {
+  display: none; /* 完全隐藏元素 */
+}
+
+/* 隐藏登录页面的标题和装饰元素（背景透明） */
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-ifJliWT-css,
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-igjRXTJ-css {
+  display: none; /* 完全隐藏元素，使背景透明可见 */
+}
+
+/* 登录页面整体背景容器透明（背景透明） */
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-ibiABng-css,
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-ihWgyFw-css {
+  background-color: transparent; /* 设置背景完全透明 */
+}
+
+/* 登录表单区域毛玻璃效果（唯一非透明区域） */
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-iubUra-css,
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-ifjOQLV-css {
+  background-color: rgba(var(--mio-main), 0.5); /* 半透明背景 */
+  backdrop-filter: blur(5px); /* 添加5px模糊的毛玻璃效果 */
+}
+
+/* 隐藏登录页链接 */
+.hope-c-PJLV-idKXllh-css a {
+  display: none; /* 隐藏链接 */
+}
+
+/* 登录页复选框颜色修改 */
+.hope-flex .hope-checkbox__control {
+  color: rgb(var(--mio-checkbox));
+  background-color: rgba(var(--mio-main), 0.5);
+}
+
+/* 登录页选中状态颜色修改 */
+.hope-flex .hope-checkbox__control[data-checked] {
+  background-color: currentcolor;
+}
+
+/* 登录页聚焦状态阴影 */
+.hope-flex .hope-checkbox__control[data-focus] {
+  box-shadow: 0 0 0 3px var(--mio-checkbox);
+  border-color: var(--mio-checkbox);
+}
