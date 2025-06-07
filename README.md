@@ -2,9 +2,11 @@
 一个简单的AList美化
 
 ## 🖼️ 截图 
-![首页](https://s21.ax1x.com/2025/06/06/pViQwi6.png)
-![登录页](https://s21.ax1x.com/2025/06/06/pViQaIx.png)
-![移动端首页](https://s21.ax1x.com/2025/06/06/pViQsQe.png)
+![PC首页](https://s21.ax1x.com/2025/06/08/pViOJeI.png)
+![PC首页本地设置](https://s21.ax1x.com/2025/06/08/pViO3yd.png)
+![PC登录页](https://s21.ax1x.com/2025/06/08/pViO8OA.png)
+![移动端本地设置](https://s21.ax1x.com/2025/06/08/pViOlSe.png)
+![移动端登录页](https://s21.ax1x.com/2025/06/08/pViO1QH.png)
 
 ## 🚀 使用  
 ### 自定义头部
