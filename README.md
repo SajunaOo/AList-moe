@@ -1,7 +1,15 @@
 # AList moe
-一个简单的AList美化
+一个简洁优雅的半透明的AList美化
+
+## ✨ 特性
+
+- 🌓 **兼容日/夜间模式** - 不同背景与配色
+- 🪟 **毛玻璃效果** - 半透明元素 + 背景模糊
+- 🎨 **精心调校的透明度** - 多层次视觉层次
+- 📱 **完美响应式** - 适配所有设备屏幕
 
 ## 🖼️ 截图 
+
 ![PC首页](https://s21.ax1x.com/2025/06/08/pViOJeI.png)
 ![PC首页本地设置](https://s21.ax1x.com/2025/06/08/pViO3yd.png)
 ![PC登录页](https://s21.ax1x.com/2025/06/08/pViO8OA.png)
@@ -9,6 +17,7 @@
 ![移动端登录页](https://s21.ax1x.com/2025/06/08/pViO1QH.png)
 
 ## 🚀 使用  
+
 ### 自定义头部
 ```
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
@@ -26,9 +35,12 @@
 ```
 
 ### 自定义内容
+
 ```
 <script src="https://gcore.jsdelivr.net/gh/SajunaOo/AList-moe/js/AList.min.js"></script>
 ```
-## 🙏 致谢  
-[安稳](https://anwen-anyi.github.io)
+## 🙏 致谢
+
+[AList](https://github.com/alist-org/alist)  
+[安稳](https://anwen-anyi.github.io)   
 [kasuie](https://github.com/kasuie/alist-customize)
