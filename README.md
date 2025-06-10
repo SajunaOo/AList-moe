@@ -25,6 +25,7 @@
 <style>
 /** 更改url以更改背景图，删除本css或留空url将调用默认背景图 */
 :root {
+  --mio-theme-color: 248, 179, 78; /* 该主题色用于修复视图切换按钮背景色 */
   --mio-bg-image: url("https://gcore.jsdelivr.net/gh/SajunaOo/AList-moe/img/background_light.webp"); /* 白天模式背景图 */
 }
 
