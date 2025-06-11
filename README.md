@@ -1,6 +1,14 @@
 # AList moe
 一个简洁优雅的半透明的AList美化
 
+## 👀 预览
+
+站点：[AList-moe Demo](https://github.com/SajunaOo/AList-moe)
+账号：demo   
+密码：demo
+
+> 请不要修改用户名和密码
+
 ## ✨ 特性
 
 - 🌓 **兼容日/夜间模式** - 不同背景与配色
@@ -45,3 +53,15 @@
 [AList](https://github.com/alist-org/alist)  
 [安稳](https://anwen-anyi.github.io)   
 [kasuie](https://github.com/kasuie/alist-customize)
+
+## 💔 最后
+
+6月11日在知道 **“贵公司”** 收购了AList之后，我心里是五味杂陈的，我为AList有一个稳定维护者而开心，又因为是“贵公司”的收购而难过
+
+AList在被收购后也没有**向社区公布**，令人疑惑的**pr提交**，开发者的沉默，文档内容的**大换血**，贵公司的**光明历史**...最后以至于issue被使用者和贡献者泄愤的言论埋没
+
+在xhofe角度上我理解他，从19年到现在，这个项目几乎由他一人维护，在这个过程中也并没有产生什么收益
+
+....  
+
+不知道在 **“贵公司”** 手中的的AList，路还能走多远？
