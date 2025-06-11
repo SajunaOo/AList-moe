@@ -3,7 +3,7 @@
 
 ## 👀 预览
 
-站点：[AList-moe Demo](https://github.com/SajunaOo/AList-moe)
+站点：[AList-moe Demo](https://github.com/SajunaOo/AList-moe)   
 账号：demo   
 密码：demo
 
