@@ -21,8 +21,11 @@
 ![PC首页](https://s21.ax1x.com/2025/06/08/pViOJeI.png)
 ![PC首页本地设置](https://s21.ax1x.com/2025/06/08/pViO3yd.png)
 ![PC登录页](https://s21.ax1x.com/2025/06/08/pViO8OA.png)
-![移动端本地设置](https://s21.ax1x.com/2025/06/08/pViOlSe.png)
-![移动端登录页](https://s21.ax1x.com/2025/06/08/pViO1QH.png)
+
+<p align="center">
+  <img src="https://s21.ax1x.com/2025/06/08/pViOlSe.png" alt="移动端本地设置" width="45%"/>
+  <img src="https://s21.ax1x.com/2025/06/08/pViO1QH.png" alt="移动端登录页" width="45%"/>
+</p>
 
 ## 🚀 使用  
 
